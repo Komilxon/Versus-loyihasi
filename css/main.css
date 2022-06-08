@@ -1,0 +1,62 @@
+/* FONT FACE */
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), 
+    url('../fonts/lato-v23-latin-regular.woff') format('woff'); 
+}
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/open-sans-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* CUSTOM PROGS */
+:root {
+    --text-fonts: "Open Sans", "Arial", sans-serif;
+    --site-fonts: "Lato", "Arial", sans-serif;
+    --brand-color: #00d6b4;
+    --text-color: #999;
+    --white-color: #fff;
+    --dark-color: #222;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: dashed 1px;
+    outline-offset: 2px;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    font-family: var(--site-fonts);
+    height: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 980px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
